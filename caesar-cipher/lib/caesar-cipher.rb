@@ -24,32 +24,32 @@ def caesar_cipher(string, shift)
 
   output_string = shifted_string.map { |c| c.chr }.join
 
-  puts output_string
+  output_string
 end
 
-puts 'Welcome to the cipher, please answer the following:'
+# puts 'Welcome to the cipher, please answer the following:'
 
-puts 'Enter a string you would like to have coded:'
-string = gets.chomp
+# puts 'Enter a string you would like to have coded:'
+# string = gets.chomp
 
-puts 'Enter your secret number to shift your letters:'
-shift = gets.chomp.to_i
+# puts 'Enter your secret number to shift your letters:'
+# shift = gets.chomp.to_i
 
-caesar_cipher(string, shift)
+# caesar_cipher(string, shift)
 
-puts 'Would you like to run your cipher again with different input? If so, type YES'
-user_response = gets.chomp
+# puts 'Would you like to run your cipher again with different input? If so, type YES'
+# user_response = gets.chomp
 
-while user_response == 'YES'
-  puts 'Enter a string you would like to have coded:'
-  string = gets.chomp
+# while user_response == 'YES'
+#   puts 'Enter a string you would like to have coded:'
+#   string = gets.chomp
 
-  puts 'Enter your secret number to shift your letters:'
-  shift = gets.chomp.to_i
+#   puts 'Enter your secret number to shift your letters:'
+#   shift = gets.chomp.to_i
 
-  caesar_cipher(string, shift)
+#   caesar_cipher(string, shift)
 
-  puts "Would you like to run your cipher again with different input?\n If so, type YES, for no, type NO"
-  user_response = gets.chomp
+#   puts "Would you like to run your cipher again with different input?\n If so, type YES, for no, type NO"
+#   user_response = gets.chomp
 
-end
+# end
