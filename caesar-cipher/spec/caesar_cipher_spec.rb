@@ -16,4 +16,8 @@ describe "#caesar_cipher" do
   it "is case sensitive" do
     expect(caesar_cipher("ChAngING caSE works FINE!", 5)).to eql("HmFslNSL hfXJ btwpx KNSJ!")
   end
+
+  it "handles negative numbers for shift" do
+    expect(caesar_cipher("negative shift", -5)).to eql("izbvodqz ncdao")
+  end
 end
