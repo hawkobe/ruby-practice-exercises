@@ -12,4 +12,8 @@ describe "#caesar_cipher" do
   it "keeps same punctuation used" do
     expect(caesar_cipher("this is one string; this continues the string.", 5)).to eql("ymnx nx tsj xywnsl; ymnx htsynszjx ymj xywnsl.")
   end
+
+  it "is case sensitive" do
+    expect(caesar_cipher("ChAngING caSE works FINE!", 5)).to eql("HmFslNSL hfXJ btwpx KNSJ!")
+  end
 end
